@@ -63,44 +63,16 @@ If you wish to contribute ideas or code please visit our site linked below or
 make pull requests to our [Github repository](https://github.com/AshamaneProject/AshamaneCore/pulls).
 
 ## Requirements
++ Platform: Linux, Windows or Mac
++ Processor with SSE2 support
++ MySQL = 8.x.x
++ CMake ≥ 3.24 (latest stable recommended) 
++ OpenSSL = 3.x.x
++ Boost ≥ 1.78 (latest stable recommended)
++ Windows SDK version 10-11
++ MS Visual Studio (Community) ≥ 16.4 (2019) or (2022) (Desktop) (Not previews) 
++ ### Linux
++ GCC ≥ 9 (Linux only)
++ Clang ≥ 11 (Linux only)
 
-Software requirements are available in the [wiki](https://www.trinitycore.info/display/tc/Requirements) for
-Windows, Linux and macOS.
-
-## Install
-
-Detailed installation guides are available in the [wiki](https://www.trinitycore.info/display/tc/Installation+Guide) for
-Windows, Linux and macOS.
-
-## Contribute
-
-You can help Ashamane using our [Patreon Page](https://www.patreon.com/ashamane). All the collected money will be used to pay developers for their work using bountysource
-
-## Reporting issues
-
-Issues can be reported via our [Mantis issue tracker](https://bt.ashamane.com).
-
-Please take the time to review existing issues before submitting your own to
-prevent duplicates.
-
-## Submitting fixes
-
-C++ fixes are submitted as pull requests via Github.
-For SQL only fixes open a ticket or if a bug report exists for the bug post on existing ticket.
-
-## Copyright
-
-License: GPL 2.0
-
-Read file [COPYING](COPYING).
-
-## Authors &amp; Contributors
-
-Read file [THANKS](THANKS).
-
-## Links
-
-* [Website](https://www.ashamane.com)
-* [Wiki](https://www.trinitycore.info)
-* [Forums](http://forum.ashamane.com/)
-* [TrinityCore](https://www.trinitycore.org/)
+Client 26972: https://drive.google.com/file/d/1WWkzvJ7sdZSlhF9A_bEly8a6Ilvh0bVK/view

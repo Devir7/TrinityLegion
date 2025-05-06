@@ -23,9 +23,11 @@
 #include "QueryResult.h"
 #include "Util.h"
 #include "SHA1.h"
+#include <boost/filesystem/directory.hpp>
 #include <boost/filesystem/operations.hpp>
 #include <fstream>
 #include <sstream>
+#include <chrono>
 
 using namespace boost::filesystem;
 

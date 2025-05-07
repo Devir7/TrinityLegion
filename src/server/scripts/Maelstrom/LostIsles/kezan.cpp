@@ -1188,6 +1188,38 @@ class spell_life_saving_complete : public SpellScript
     }
 };
 
+// 35202
+class npc_kezan_partygoer_35202 : public CreatureScript
+{
+public:
+    npc_kezan_partygoer_35202() : CreatureScript("npc_kezan_partygoer_35202") { }
+
+    struct npc_kezan_partygoer_35202AI : public ScriptedAI
+    {
+        npc_kezan_partygoer_35202AI(Creature* creature) : ScriptedAI(creature) { }
+
+        EventMap m_events;
+        bool m_castCooldown;
+
+        void Reset() override
+        {
+            me->SetReactState(REACT_PASSIVE);
+        }
+
+        void DamageTaken(Unit* attacker, uint32& damage) override
+        {
+            if (attacker->GetEntry() == 35200)
+                me->SetReactState(REACT_AGGRESSIVE);
+        }
+    };
+
+    CreatureAI* GetAI(Creature* creature) const override
+    {
+        return new npc_kezan_partygoer_35202AI(creature);
+    }
+};
+
+
 void AddSC_kezan()
 {
     RegisterCreatureAI(npc_defiant_troll);
@@ -1217,4 +1249,5 @@ void AddSC_kezan()
     RegisterCreatureAI(npc_end_hot_rod);
     new gob_canon_gobelin();
     RegisterSpellScript(spell_life_saving_complete);
+    new npc_kezan_partygoer_35202();
 }

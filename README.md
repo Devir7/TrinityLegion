@@ -13,6 +13,7 @@
 
 ## Build Status
 [![Windows x64](https://github.com/ReyDonovan/TrinityLegion/actions/workflows/build-win-x64.yml/badge.svg)](https://github.com/ReyDonovan/TrinityLegion/actions/workflows/build-win-x64.yml)
+[![Clang](https://github.com/ReyDonovan/TrinityLegion/actions/workflows/build-clang.yml/badge.svg)](https://github.com/ReyDonovan/TrinityLegion/actions/workflows/build-clang.yml)
 
 ## Introduction
 AshamaneCore is a *MMORPG* Framework based mostly in C++.
